@@ -1,12 +1,12 @@
-import { LogoIcon } from "./assets/icons"
-import CrudUser from "./components/CrudUser"
-import "./styles/App.css"
+import { LogoIcon } from "./assets/icons" // importa a biblioteca icons
+import CrudUser from "./components/CrudUser"// importa o componte CrudUser
+import "./styles/App.css" // importa os CSS da apliacação
 
-function App() {
+function App() { // componente funcional App
 	return (
 		<>
-			<header>
-				<div className='header__content'>
+			<header>  {/*cabeçalho da aplicação*/}
+				<div className='header__content'> {/* container principal do conteudo do cabeçalho */}
 					<div className='logo'>
 						<LogoIcon />
 						<strong>JSON SERVER API</strong>
@@ -14,6 +14,7 @@ function App() {
 				</div>
 			</header>
 			<main>
+				{/*componente principal onde será chamada o CrudUser*/}
 				<CrudUser />
 			</main>
 		</>
